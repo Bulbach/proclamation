@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/css"/>
     <title>Company NAME</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
@@ -73,14 +74,14 @@
                                             data-target="#modalByFasadchik">Подробности</button>
                                         <!-- Модальное окно -->
                                         <div class="modal fade" id="modalByFasadchik" tabindex="-1" role="dialog"
-                                            aria-labelledby="myModalLabel">
+                                            aria-labelledby="ByFasadchik">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close"><span aria-hidden="true">&times;</span>
                                                         </button>
-                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                        <h4 class="modal-title" id="ByFasadchik">Подробности</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="text_details">Локация: Мюнхен,Бохум. </div>
@@ -104,37 +105,37 @@
                                         <button type="button" class="btn btn-primary" data-toggle="modal"
                                             data-target="#modalByFasadchikApply">Подать заявку</button>
                                         <div class="modal fade" id="modalByFasadchikApply" tabindex="-1" role="dialog"
-                                            aria-labelledby="myModalLabel">
+                                            aria-labelledby="ByFasadchikApply">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close"><span
                                                                 aria-hidden="true">&times;</span></button>
-                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                        <h4 class="modal-title" id="ByFasadchikApply">Заявка</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form class="form" onsubmit="return applyHandler(this)">
                                                             <div class="form-group">
                                                                 <label class="control-label"
-                                                                    for="exampleInputName2">Name</label>
+                                                                    for="fasadchikName">Name</label>
                                                                 <input name="Name" type="text" class="form-control"
-                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                                    id="fasadchikName" placeholder="Jane Doe">
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <label for="fasadchikEmail">Email</label>
                                                                 <input name="Email" type="email" class="form-control"
-                                                                    id="exampleInputEmail2"
+                                                                    id="fasadchikEmail"
                                                                     placeholder="jane.doe@example.com">
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <label for="fasadchikTel">Phone</label>
                                                                 <input name="Phone" type="tel" class="form-control"
-                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                                    id="fasadchikTel" placeholder="+37529---------">
                                                             </div>
                                                             <div class="form-group">
                                                                 <input name="prof" type="hidden" value="fasadchik"
-                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                                    class="form-control" id="fasadchikProf" hidden>
                                                             </div>
                                                             <button type="submit" class="btn btn-primary">Send
                                                                 invitation</button>
@@ -166,14 +167,14 @@
                                             data-target="#modalByPlitochnik">Подробности</button>
                                         <!-- Модальное окно -->
                                         <div class="modal fade" id="modalByPlitochnik" tabindex="-1" role="dialog"
-                                            aria-labelledby="myModalLabel">
+                                            aria-labelledby="plitochnik">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close"><span aria-hidden="true">&times;</span>
                                                         </button>
-                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                        <h4 class="modal-title" id="plitochnik">Подробности</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="text_details">Локация: Штутгарт. </div>
@@ -198,37 +199,37 @@
                                             data-target="#modalByPlitochnikApply">Подать
                                             заявку</button>
                                         <div class="modal fade" id="modalByPlitochnikApply" tabindex="-1" role="dialog"
-                                            aria-labelledby="myModalLabel">
+                                            aria-labelledby="plitochnikApply">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close"><span
                                                                 aria-hidden="true">&times;</span></button>
-                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                        <h4 class="modal-title" id="plitochnikApply">Заявка</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form class="form" onsubmit="return applyHandler(this)">
                                                             <div class="form-group">
                                                                 <label class="control-label"
-                                                                    for="exampleInputName2">Name</label>
+                                                                    for="plitochnikName">Name</label>
                                                                 <input name="Name" type="text" class="form-control"
-                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                                    id="plitochnikName" placeholder="Jane Doe">
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <label for="plitochnikEmail">Email</label>
                                                                 <input name="Email" type="email" class="form-control"
-                                                                    id="exampleInputEmail2"
+                                                                    id="plitochnikEmail"
                                                                     placeholder="jane.doe@example.com">
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <label for="plitochnikTel">Phone</label>
                                                                 <input name="Phone" type="tel" class="form-control"
-                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                                    id="plitochnikTel" placeholder="+37529---------">
                                                             </div>
                                                             <div class="form-group">
                                                                 <input name="prof" type="hidden" value="plitochnik"
-                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                                    class="form-control" id="plitochnikProf" hidden>
                                                             </div>
                                                             <button type="submit" class="btn btn-primary">Send
                                                                 invitation</button>
@@ -244,7 +245,7 @@
                         <li class="media">
                             <div class="media-left">
                                 <a href="#" title="Post">
-                                    <img class="media-object" src="../static/img/fasadchik.jpg" alt="Post">
+                                    <img class="media-object" src="../static/img/avto_maliar.jpg" alt="Post">
                                 </a>
                             </div>
                             <div class="media-body">
@@ -257,14 +258,14 @@
                                             data-target="#modalByAvtoMaliar">Подробности</button>
                                         <!-- Модальное окно -->
                                         <div class="modal fade" id="modalByAvtoMaliar" tabindex="-1" role="dialog"
-                                            aria-labelledby="myModalLabel">
+                                            aria-labelledby="avto_maliar">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close"><span aria-hidden="true">&times;</span>
                                                         </button>
-                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                        <h4 class="modal-title" id="avto_maliar">Подробности</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="text_details">Локация:Эрфурт. </div>
@@ -288,37 +289,37 @@
                                         <button type="button" class="btn btn-primary" data-toggle="modal"
                                             data-target="#modalByAvtoMaliarApply">Подать заявку</button>
                                         <div class="modal fade" id="modalByAvtoMaliarApply" tabindex="-1" role="dialog"
-                                            aria-labelledby="myModalLabel">
+                                            aria-labelledby="maliarApply">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close"><span
                                                                 aria-hidden="true">&times;</span></button>
-                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                        <h4 class="modal-title" id="maliarApply">Заявка</h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form class="form" onsubmit="return applyHandler(this)">
                                                             <div class="form-group">
                                                                 <label class="control-label"
-                                                                    for="exampleInputName2">Name</label>
+                                                                    for="avto_maliarName">Name</label>
                                                                 <input name="Name" type="text" class="form-control"
-                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                                    id="avto_maliarName" placeholder="Jane Doe">
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <label for="avto_maliarEmail">Email</label>
                                                                 <input name="Email" type="email" class="form-control"
-                                                                    id="exampleInputEmail2"
+                                                                    id="avto_maliarEmail"
                                                                     placeholder="jane.doe@example.com">
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <label for="avto_maliarTel">Phone</label>
                                                                 <input name="Phone" type="tel" class="form-control"
-                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                                    id="avto_maliarTel" placeholder="+37529---------">
                                                             </div>
                                                             <div class="form-group">
                                                                 <input name="prof" type="hidden" value="fasadchik"
-                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                                    class="form-control" id="avto_maliarProf" hidden>
                                                             </div>
                                                             <button type="submit" class="btn btn-primary">Send
                                                                 invitation</button>
