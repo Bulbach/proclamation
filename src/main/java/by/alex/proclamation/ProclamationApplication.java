@@ -17,7 +17,7 @@ public class ProclamationApplication {
         final String username_From = "alexverezubov@gmail.com";
         final String password = "jltnbuthcqaswlyz";
         final String to = "zverovik@yahoo.com";
-        
+
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
