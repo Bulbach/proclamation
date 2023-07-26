@@ -235,7 +235,7 @@ a.none:hover {
 
 /* Hero */
 .hero_area {
-    background-image: url(/static/img/hero.jpg);
+    background-image: url('../img/hero.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
