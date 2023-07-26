@@ -11,8 +11,8 @@ import java.util.Properties;
 @Slf4j
 @Component
 public class Cover {
-    private static final String username_From = "alexverezubov@gmail.com";
-    final String password = "jltnbuthcqaswlyz";
+    private static final String username_From = "farelkavkusnaya@gmail.com";
+    final String password = "ufpamhnwwkgeyalk";
     private static final String to = "verezubovwork@yahoo.com";
     Session session = getSession();
 
