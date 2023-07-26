@@ -13,22 +13,31 @@
       <aside class="meta category-meta">
          <div class="pull-left">
             <button type="button" class="btn btn-success" data-toggle="modal"
-               data-target="#modalByElectrik">Подробности</button>
+                    data-target="#modalByFasadchik">Подробности</button>
             <!-- Модальное окно -->
-            <!-- Модаль -->
-            <div class="modal fade" id="modalByElectrik" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="modalByElectresiti" tabindex="-1" role="dialog"
+                 aria-labelledby="ByElectresiti">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                        <h4 class="modal-title" id="ByElectresiti">Подробности</h4>
                      </div>
                      <div class="modal-body">
-                        <p>Локация: </p>
-                        <p>Условия: </p>
-                        <p>Оплата: </p>
+                        <div class="text_details">Локация: Мюнхен,Бохум. </div>
+                        <div class="text_details"> Условия: Работа постоянная и только
+                           для специалистов.
+                           Жильё предоставляем бесплатно.</div>
+                        <div class="text_details">График работы : пнд-пятн с 8 до 17.
+                           соб. с 8 до 13 ( по
+                           желанию ).
+                           Контракт на год с вожможностью продления на 5 лет.</div>
+                        <div class="text_details"> Соцпакет, оформляем параграф 24 ( или
+                           продливаем его).
+                           Трудоустройство можно и по био-паспорту тоже.</div>
+                        <div class="text_details">Оплата: 12 евро/час </div>
                      </div>
                   </div>
                </div>
@@ -36,38 +45,44 @@
          </div>
          <div class="pull-right">
             <button type="button" class="btn btn-primary" data-toggle="modal"
-               data-target="#modalByElectrikApply">Подать заявку</button>
-            <div class="modal fade" id="modalByElectrikApply" tabindex="-1" role="dialog"
-               aria-labelledby="myModalLabel">
+                    data-target="#modalByElectresitiApply">Подать заявку</button>
+            <div class="modal fade" id="modalByElectresitiApply" tabindex="-1" role="dialog"
+                 aria-labelledby="ByElectresitiApply">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="ByElectresitiApply">Заявка</h4>
                      </div>
                      <div class="modal-body">
                         <form class="form" onsubmit="return applyHandler(this)">
                            <div class="form-group">
-                              <label for="exampleInputName2">Name</label>
-                              <input name="Name" type="text" class="form-control" id="exampleInputName2"
-                                 placeholder="Jane Doe">
+                              <label class="control-label"
+                                     for="electresitiName">Name</label>
+                              <input name="name" type="text" class="form-control"
+                                     id="electresitiName" placeholder="Jane Doe" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Email</label>
-                              <input name="Email" type="email" class="form-control" id="exampleInputEmail2"
-                                 placeholder="jane.doe@example.com">
+                              <label for="electresitiEmail">Email</label>
+                              <input name="email" type="email" class="form-control"
+                                     id="electresitiEmail"
+                                     placeholder="jane.doe@example.com" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Phone</label>
-                              <input name="Phone" type="tel" class="form-control" id="exampleInputtel2"
-                                 placeholder="+37529---------">
+                              <label for="electresitiTel">Phone</label>
+                              <input name="phone" type="tel" class="form-control"
+                                     id="electresitiTel" placeholder="+37529---------" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <input name="prof" type="hidden" value="santexnik" class="form-control"
-                                 id="exampleInputProf2" hidden>
+                              <input name="prof" type="hidden" value="electresiti"
+                                     class="form-control" id="electresitiProf" hidden>
                            </div>
-                           <button type="submit" class="btn btn-primary">Send
+                           <button type="submit" class="btn btn-primary" data-loading-text="Подождите...">Send
                               invitation</button>
                         </form>
                      </div>
@@ -94,22 +109,31 @@
       <aside class="meta category-meta">
          <div class="pull-left">
             <button type="button" class="btn btn-success" data-toggle="modal"
-               data-target="#modalBySantexnik">Подробности</button>
+                    data-target="#modalBySantexnik">Подробности</button>
             <!-- Модальное окно -->
-            <!-- Модаль -->
-            <div class="modal fade" id="modalBySantexnik" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="modalBySantexnik" tabindex="-1" role="dialog"
+                 aria-labelledby="BySantexnik">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                        <h4 class="modal-title" id="BySantexnik">Подробности</h4>
                      </div>
                      <div class="modal-body">
-                        <p>Локация: </p>
-                        <p>Условия: </p>
-                        <p>Оплата: </p>
+                        <div class="text_details">Локация: Мюнхен,Бохум. </div>
+                        <div class="text_details"> Условия: Работа постоянная и только
+                           для специалистов.
+                           Жильё предоставляем бесплатно.</div>
+                        <div class="text_details">График работы : пнд-пятн с 8 до 17.
+                           соб. с 8 до 13 ( по
+                           желанию ).
+                           Контракт на год с вожможностью продления на 5 лет.</div>
+                        <div class="text_details"> Соцпакет, оформляем параграф 24 ( или
+                           продливаем его).
+                           Трудоустройство можно и по био-паспорту тоже.</div>
+                        <div class="text_details">Оплата: 12 евро/час </div>
                      </div>
                   </div>
                </div>
@@ -117,38 +141,44 @@
          </div>
          <div class="pull-right">
             <button type="button" class="btn btn-primary" data-toggle="modal"
-               data-target="#modalBySantexnikApply">Подать заявку</button>
+                    data-target="#modalBySantexnikApply">Подать заявку</button>
             <div class="modal fade" id="modalBySantexnikApply" tabindex="-1" role="dialog"
-               aria-labelledby="myModalLabel">
+                 aria-labelledby="BySantexnikApply">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="BySantexnikApply">Заявка</h4>
                      </div>
                      <div class="modal-body">
                         <form class="form" onsubmit="return applyHandler(this)">
                            <div class="form-group">
-                              <label for="exampleInputName2">Name</label>
-                              <input name="Name" type="text" class="form-control" id="exampleInputName2"
-                                 placeholder="Jane Doe">
+                              <label class="control-label"
+                                     for="santexnikName">Name</label>
+                              <input name="name" type="text" class="form-control"
+                                     id="santexnikName" placeholder="Jane Doe" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Email</label>
-                              <input name="Email" type="email" class="form-control" id="exampleInputEmail2"
-                                 placeholder="jane.doe@example.com">
+                              <label for="santexnikEmail">Email</label>
+                              <input name="email" type="email" class="form-control"
+                                     id="santexnikEmail"
+                                     placeholder="jane.doe@example.com" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Phone</label>
-                              <input name="Phone" type="tel" class="form-control" id="exampleInputtel2"
-                                 placeholder="+37529---------">
+                              <label for="santexnikTel">Phone</label>
+                              <input name="phone" type="tel" class="form-control"
+                                     id="santexnikTel" placeholder="+37529---------" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <input name="prof" type="hidden" value="santexnik" class="form-control"
-                                 id="exampleInputProf2" hidden>
+                              <input name="prof" type="hidden" value="santexnik"
+                                     class="form-control" id="santexnikProf" hidden>
                            </div>
-                           <button type="submit" class="btn btn-primary">Send
+                           <button type="submit" class="btn btn-primary" data-loading-text="Подождите...">Send
                               invitation</button>
                         </form>
                      </div>
@@ -173,21 +203,31 @@
       <aside class="meta category-meta">
          <div class="pull-left">
             <button type="button" class="btn btn-success" data-toggle="modal"
-               data-target="#modalByArmaturshik">Подробности</button>
+                    data-target="#modalByArmaturshik">Подробности</button>
             <!-- Модальное окно -->
-            <div class="modal fade" id="modalByArmaturshik" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="modalByArmaturshik" tabindex="-1" role="dialog"
+                 aria-labelledby="ByArmaturshik">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                        <h4 class="modal-title" id="ByArmaturshik">Подробности</h4>
                      </div>
                      <div class="modal-body">
-                        <p>Локация: </p>
-                        <p>Условия: </p>
-                        <p>Оплата: </p>
+                        <div class="text_details">Локация: Мюнхен,Бохум. </div>
+                        <div class="text_details"> Условия: Работа постоянная и только
+                           для специалистов.
+                           Жильё предоставляем бесплатно.</div>
+                        <div class="text_details">График работы : пнд-пятн с 8 до 17.
+                           соб. с 8 до 13 ( по
+                           желанию ).
+                           Контракт на год с вожможностью продления на 5 лет.</div>
+                        <div class="text_details"> Соцпакет, оформляем параграф 24 ( или
+                           продливаем его).
+                           Трудоустройство можно и по био-паспорту тоже.</div>
+                        <div class="text_details">Оплата: 12 евро/час </div>
                      </div>
                   </div>
                </div>
@@ -195,39 +235,44 @@
          </div>
          <div class="pull-right">
             <button type="button" class="btn btn-primary" data-toggle="modal"
-               data-target="#modalByArmaturshikApply">Подать
-               заявку</button>
+                    data-target="#modalByArmaturshikApply">Подать заявку</button>
             <div class="modal fade" id="modalByArmaturshikApply" tabindex="-1" role="dialog"
-               aria-labelledby="myModalLabel">
+                 aria-labelledby="ByArmaturshikApply">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="ByArmaturshikApply">Заявка</h4>
                      </div>
                      <div class="modal-body">
                         <form class="form" onsubmit="return applyHandler(this)">
                            <div class="form-group">
-                              <label class="control-label" for="exampleInputName2">Name</label>
-                              <input name="Name" type="text" class="form-control" id="exampleInputName2"
-                                 placeholder="Jane Doe">
+                              <label class="control-label"
+                                     for="armaturshikName">Name</label>
+                              <input name="name" type="text" class="form-control"
+                                     id="armaturshikName" placeholder="Jane Doe" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Email</label>
-                              <input name="Email" type="email" class="form-control" id="exampleInputEmail2"
-                                 placeholder="jane.doe@example.com">
+                              <label for="armaturshikEmail">Email</label>
+                              <input name="email" type="email" class="form-control"
+                                     id="armaturshikEmail"
+                                     placeholder="jane.doe@example.com" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Phone</label>
-                              <input name="Phone" type="tel" class="form-control" id="exampleInputtel2"
-                                 placeholder="+37529---------">
+                              <label for="armaturshikTel">Phone</label>
+                              <input name="phone" type="tel" class="form-control"
+                                     id="armaturshikTel" placeholder="+37529---------" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <input name="prof" type="hidden" value="armaturshik" class="form-control"
-                                 id="exampleInputProf2" hidden>
+                              <input name="prof" type="hidden" value="armaturshik"
+                                     class="form-control" id="armaturshikProf" hidden>
                            </div>
-                           <button type="submit" class="btn btn-primary">Send
+                           <button type="submit" class="btn btn-primary" data-loading-text="Подождите...">Send
                               invitation</button>
                         </form>
                      </div>
@@ -254,22 +299,31 @@
       <aside class="meta category-meta">
          <div class="pull-left">
             <button type="button" class="btn btn-success" data-toggle="modal"
-               data-target="#modalByEkskovatorshik">Подробности</button>
+                    data-target="#modalByEkskovatorshik">Подробности</button>
             <!-- Модальное окно -->
             <div class="modal fade" id="modalByEkskovatorshik" tabindex="-1" role="dialog"
-               aria-labelledby="myModalLabel">
+                 aria-labelledby="ByEkskovatorshik">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                        <h4 class="modal-title" id="ByEkskovatorshik">Подробности</h4>
                      </div>
                      <div class="modal-body">
-                        <p>Локация: </p>
-                        <p>Условия: </p>
-                        <p>Оплата: </p>
+                        <div class="text_details">Локация: Мюнхен,Бохум. </div>
+                        <div class="text_details"> Условия: Работа постоянная и только
+                           для специалистов.
+                           Жильё предоставляем бесплатно.</div>
+                        <div class="text_details">График работы : пнд-пятн с 8 до 17.
+                           соб. с 8 до 13 ( по
+                           желанию ).
+                           Контракт на год с вожможностью продления на 5 лет.</div>
+                        <div class="text_details"> Соцпакет, оформляем параграф 24 ( или
+                           продливаем его).
+                           Трудоустройство можно и по био-паспорту тоже.</div>
+                        <div class="text_details">Оплата: 12 евро/час </div>
                      </div>
                   </div>
                </div>
@@ -277,39 +331,44 @@
          </div>
          <div class="pull-right">
             <button type="button" class="btn btn-primary" data-toggle="modal"
-               data-target="#modalByEkskovatorshikApply">Подать
-               заявку</button>
+                    data-target="#modalByEkskovatorshikApply">Подать заявку</button>
             <div class="modal fade" id="modalByEkskovatorshikApply" tabindex="-1" role="dialog"
-               aria-labelledby="myModalLabel">
+                 aria-labelledby="ByEkskovatorshikApply">
                <div class="modal-dialog" role="document">
                   <div class="modal-content">
                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                              aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="ByEkskovatorshikApply">Заявка</h4>
                      </div>
                      <div class="modal-body">
                         <form class="form" onsubmit="return applyHandler(this)">
                            <div class="form-group">
-                              <label class="control-label" for="exampleInputName2">Name</label>
-                              <input name="Name" type="text" class="form-control" id="exampleInputName2"
-                                 placeholder="Jane Doe">
+                              <label class="control-label"
+                                     for="ekskovatorshikName">Name</label>
+                              <input name="name" type="text" class="form-control"
+                                     id="ekskovatorshikName" placeholder="Jane Doe" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Email</label>
-                              <input name="Email" type="email" class="form-control" id="exampleInputEmail2"
-                                 placeholder="jane.doe@example.com">
+                              <label for="ekskovatorshikEmail">Email</label>
+                              <input name="email" type="email" class="form-control"
+                                     id="ekskovatorshikEmail"
+                                     placeholder="jane.doe@example.com" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail2">Phone</label>
-                              <input name="Phone" type="tel" class="form-control" id="exampleInputtel2"
-                                 placeholder="+37529---------">
+                              <label for="ekskovatorshikTel">Phone</label>
+                              <input name="phone" type="tel" class="form-control"
+                                     id="ekskovatorshikTel" placeholder="+37529---------" required>
+                              <span class="help-block"></span>
                            </div>
                            <div class="form-group">
-                              <input name="prof" type="hidden" value="ekskovatorshik" class="form-control"
-                                 id="exampleInputProf2" hidden>
+                              <input name="prof" type="hidden" value="ekskovatorshik"
+                                     class="form-control" id="ekskovatorshikProf" hidden>
                            </div>
-                           <button type="submit" class="btn btn-primary">Send
+                           <button type="submit" class="btn btn-primary" data-loading-text="Подождите...">Send
                               invitation</button>
                         </form>
                      </div>
@@ -334,22 +393,31 @@
          <aside class="meta category-meta">
             <div class="pull-left">
                <button type="button" class="btn btn-success" data-toggle="modal"
-                  data-target="#modalByEkskovatorshik">Подробности</button>
+                       data-target="#modalByGipsokartonshik">Подробности</button>
                <!-- Модальное окно -->
                <div class="modal fade" id="modalByGipsokartonshik" tabindex="-1" role="dialog"
-                  aria-labelledby="myModalLabel">
+                    aria-labelledby="ByGipsokartonshik">
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
                         <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                 aria-hidden="true">&times;</span>
+                           <button type="button" class="close" data-dismiss="modal"
+                                   aria-label="Close"><span aria-hidden="true">&times;</span>
                            </button>
-                           <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                           <h4 class="modal-title" id="ByGipsokartonshik">Подробности</h4>
                         </div>
                         <div class="modal-body">
-                           <p>Локация: </p>
-                           <p>Условия: </p>
-                           <p>Оплата: </p>
+                           <div class="text_details">Локация: Мюнхен,Бохум. </div>
+                           <div class="text_details"> Условия: Работа постоянная и только
+                              для специалистов.
+                              Жильё предоставляем бесплатно.</div>
+                           <div class="text_details">График работы : пнд-пятн с 8 до 17.
+                              соб. с 8 до 13 ( по
+                              желанию ).
+                              Контракт на год с вожможностью продления на 5 лет.</div>
+                           <div class="text_details"> Соцпакет, оформляем параграф 24 ( или
+                              продливаем его).
+                              Трудоустройство можно и по био-паспорту тоже.</div>
+                           <div class="text_details">Оплата: 12 евро/час </div>
                         </div>
                      </div>
                   </div>
@@ -357,39 +425,44 @@
             </div>
             <div class="pull-right">
                <button type="button" class="btn btn-primary" data-toggle="modal"
-                  data-target="#modalByGipsokartonshikApply">Подать
-                  заявку</button>
+                       data-target="#modalByGipsokartonshikApply">Подать заявку</button>
                <div class="modal fade" id="modalByGipsokartonshikApply" tabindex="-1" role="dialog"
-                  aria-labelledby="myModalLabel">
+                    aria-labelledby="ByGipsokartonshikApply">
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
                         <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                 aria-hidden="true">&times;</span></button>
-                           <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                           <button type="button" class="close" data-dismiss="modal"
+                                   aria-label="Close"><span
+                                   aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title" id="ByGipsokartonshikApply">Заявка</h4>
                         </div>
                         <div class="modal-body">
                            <form class="form" onsubmit="return applyHandler(this)">
                               <div class="form-group">
-                                 <label class="control-label" for="exampleInputName2">Name</label>
-                                 <input name="Name" type="text" class="form-control" id="exampleInputName2"
-                                    placeholder="Jane Doe">
+                                 <label class="control-label"
+                                        for="gipsokartonshikName">Name</label>
+                                 <input name="name" type="text" class="form-control"
+                                        id="gipsokartonshikName" placeholder="Jane Doe" required>
+                                 <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                 <label for="exampleInputEmail2">Email</label>
-                                 <input name="Email" type="email" class="form-control" id="exampleInputEmail2"
-                                    placeholder="jane.doe@example.com">
+                                 <label for="gipsokartonshikEmail">Email</label>
+                                 <input name="email" type="email" class="form-control"
+                                        id="gipsokartonshikEmail"
+                                        placeholder="jane.doe@example.com" required>
+                                 <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                 <label for="exampleInputEmail2">Phone</label>
-                                 <input name="Phone" type="tel" class="form-control" id="exampleInputtel2"
-                                    placeholder="+37529---------">
+                                 <label for="gipsokartonshikTel">Phone</label>
+                                 <input name="phone" type="tel" class="form-control"
+                                        id="gipsokartonshikTel" placeholder="+37529---------" required>
+                                 <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                 <input name="prof" type="hidden" value="gipsokartonshik" class="form-control"
-                                    id="exampleInputProf2" hidden>
+                                 <input name="prof" type="hidden" value="gipsokartonshik"
+                                        class="form-control" id="gipsokartonshikProf" hidden>
                               </div>
-                              <button type="submit" class="btn btn-primary">Send
+                              <button type="submit" class="btn btn-primary" data-loading-text="Подождите...">Send
                                  invitation</button>
                            </form>
                         </div>
