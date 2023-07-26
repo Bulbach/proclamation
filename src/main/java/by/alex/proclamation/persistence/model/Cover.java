@@ -1,14 +1,19 @@
-package by.alex.proclamation.model;
+package by.alex.proclamation.persistence.model;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import javax.mail.*;
-import java.util.Properties;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Properties;
 
-public class Сover {
+@Slf4j
+@Component
+public class Cover {
     private static final String username_From = "alexverezubov@gmail.com";
     final String password = "jltnbuthcqaswlyz";
-    private static final String to = "zverovik@yahoo.com";
+    private static final String to = "verezubovwork@yahoo.com";
     Session session = getSession();
 
     private Session getSession() {
@@ -21,12 +26,16 @@ public class Сover {
         return Session.getInstance(prop,
                 new Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
+                        log.debug("Session was created");
                         return new PasswordAuthentication(username_From, password);
                     }
                 });
     }
+    public Message createEmail(){
+        return getMessage(session);
+    }
 
-    public static Message getMessage(Session session) {
+    private Message getMessage(Session session) {
 
         Message message = new MimeMessage(session);
         try {
@@ -37,6 +46,7 @@ public class Сover {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
         } catch (MessagingException e) {
+            log.warn("Проблема при создании заявки(письма)");
             e.printStackTrace();
         }
         return message;
