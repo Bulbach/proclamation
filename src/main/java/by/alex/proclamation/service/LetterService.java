@@ -4,9 +4,11 @@ import by.alex.proclamation.exeption.CustomAppException;
 import by.alex.proclamation.persistence.dto.LetterDto;
 import by.alex.proclamation.persistence.mapper.LetterMapper;
 import by.alex.proclamation.persistence.model.Cover;
+import by.alex.proclamation.persistence.model.Response;
 import by.alex.proclamation.persistence.repository.LetterRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import javax.mail.Message;
@@ -28,19 +30,21 @@ public class LetterService {
     }
 
 
-    public String createApplication(LetterDto letDto) {
-        String done;
+    public Response createApplication(LetterDto letDto) {
+        Response response =  Response.builder().build();
         if (!letRep.existsByEmailAndProf(letDto.getEmail(), letDto.getProf())) {
             sendMail(letDto);
             letRep.save(letMap.toModel(letDto));
             log.warn("Заявка отправлена и сохранена" + letDto);
-            done = "Все хорошо! Ваша заявка отправлена.";
+            response.setStatusCode( HttpStatus.OK.value());
+            response.setMessage("Все хорошо! Ваша заявка отправлена.");
+
         } else {
             log.warn("Была получена повторная заявка с одинакового емейла");
-//            done = "Заявка с таким email на эту вакансию уже была отправлена";
-            throw new CustomAppException("Заявка с таким email на эту вакансию уже была отправлена");
+            response.setStatusCode(HttpStatus.SEE_OTHER.value());
+            response.setMessage("Заявка с таким email на эту вакансию уже была отправлена");
         }
-        return done;
+        return response;
     }
 
     private void sendMail(LetterDto letterDto) {
