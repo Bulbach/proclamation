@@ -11,7 +11,7 @@
     <groupId>by.Alex</groupId>
     <artifactId>proclamation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>proclamation</name>
     <description>proclamation</description>
     <properties>
@@ -80,13 +80,10 @@
             <artifactId>spring-boot-starter-logging</artifactId>
             <version>3.1.2</version>
         </dependency>
-
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
